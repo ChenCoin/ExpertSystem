@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>专家系统</title>
+	<link rel="Shortcut Icon" href="IMG/favicon.ico" />
+	<link rel="stylesheet" href="JS/bootstrap/bootstrap.css" />
+	<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+</head>
+
+<body>
+
+	<div id="titleBar">
+		<a style="margin:0 32px;font-size: 24px;">
+			专家系统
+		</a>
+		<p style="display:inline;position:relative;bottom:2px;padding: 0 0 0 48px;font-size: 12px;text-decoration: none;">
+			努力学习，做一个专家
+		</p>
+		<div style="float:right;padding:1px 8px 0 0;margin:0;">
+			<div id="databasebtn" style="display:inline;">
+				<button type="button" id="add" class="btn btn-default btn-sm" onClick="Add()" style="visibility: hidden;">添加</button>
+				<button type="button" id="motify" class="btn btn-default btn-sm" onClick="Motify()" style="visibility: hidden;">修改</button>
+				<button type="button" id="delete" class="btn btn-default btn-sm" onClick="Delete()" style="visibility: hidden;">删除</button>
+			</div>
+			<a style="padding:16px;"></a>
+			<input type="file" id="files" style="display:none" onchange="fileimport();" />
+			<input type="button" id="import" value="读取" class="btn btn-default btn-sm" />
+			<input type="button" id="export" value="保存" class="btn btn-default btn-sm" />
+		</div>
+	</div>
+	<div id="view">
+		<div id="context" class="box" style="text-align:center;padding:16px;">
+			<h3>一个简单的专家系统</h3>
+			<br/>
+			<br/>
+			<p>通过
+				<b>JSON数据文件</b>来存储系统的数据</p>
+			<p>数据文件以文件下载的形式保存到磁盘</p>
+			<p>每次用完此系统，需
+				<b>手动</b>保存文件</p>
+			<p>知识库有规则添加、修改和删除功能，只有选择了某一条规则，才能进行修改或删除</p>
+			<p>点击“
+				<b>读取</b>”，载入本文件同一个目录下的数据文件data.json，开始使用系统</p>
+		</div>
+	</div>
+	<div style="position:fixed; top:0; left:42%; margin:0 auto; text-align:center;padding:8px 0;">
+		<a onClick="database()" id="database" style="color:aliceblue;font-size:24px;margin:0 16px;cursor:pointer;visibility: hidden;text-decoration:underline;">知识库</a>
+		<a onClick="reason()" id="reason" style="color:aliceblue;font-size:24px;margin:0 16px;cursor:pointer;visibility: hidden;">推理机</a>
+	</div>
+	<p id="end">Power by Cano Team , ©2017-12-12</p>
+
+	<div id="page">
+		<div id="actionbox">
+			<h3 id="boxtitle">标题</h3>
+			<div id="boxcontent"> </div>
+			<div class="btnbar">
+				<button class="btn btn-default btn-sm" onClick="Cancel()">取消</button>
+				<button class="btn btn-default btn-sm" onClick="Confirm()">确认</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script src="JS/jquery/jquery-1.8.2.js"></script>
+<script src="JS/filesaver/FileSaver.js" charset="utf-8"></script>
+<script src="JS/bootstrap/bootstrap.js"></script>
+<script src="JS/script.js"></script>
+
+</html>

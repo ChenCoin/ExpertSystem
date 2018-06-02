@@ -1,0 +1,117 @@
+{
+    "rules": [
+        {
+            "conclusion": "是哺乳动物",
+            "condition": [
+                "有毛发"
+            ]
+        },
+        {
+            "conclusion": "是哺乳动物",
+            "condition": [
+                "有奶"
+            ]
+        },
+        {
+            "conclusion": "是鸟",
+            "condition": [
+                "有羽毛"
+            ]
+        },
+        {
+            "conclusion": "是鸟",
+            "condition": [
+                "会飞",
+                "会生蛋"
+            ]
+        },
+        {
+            "conclusion": "是食肉动物",
+            "condition": [
+                "吃肉"
+            ]
+        },
+        {
+            "conclusion": "是食肉动物",
+            "condition": [
+                "有锋利牙齿",
+                "有爪",
+                "眼向前方"
+            ]
+        },
+        {
+            "conclusion": "有蹄类动物",
+            "condition": [
+                "是哺乳动物",
+                "有蹄"
+            ]
+        },
+        {
+            "conclusion": "有蹄类动物",
+            "condition": [
+                "是哺乳动物",
+                "反刍"
+            ]
+        },
+        {
+            "conclusion": "是豹",
+            "condition": [
+                "是哺乳动物",
+                "是食肉动物",
+                "有黄褐色皮毛",
+                "有暗斑点"
+            ]
+        },
+        {
+            "conclusion": "是虎",
+            "condition": [
+                "是哺乳动物",
+                "是食肉动物",
+                "有黄褐色皮毛",
+                "有黑色条纹"
+            ]
+        },
+        {
+            "conclusion": "是长颈鹿",
+            "condition": [
+                "有蹄类动物",
+                "有长脖子",
+                "有长腿",
+                "有暗斑点"
+            ]
+        },
+        {
+            "conclusion": "是斑马",
+            "condition": [
+                "有蹄类动物",
+                "有黑色条纹"
+            ]
+        },
+        {
+            "conclusion": "是鸵鸟",
+            "condition": [
+                "是鸟",
+                "不会飞",
+                "有长脖子",
+                "有长腿",
+                "有黑白二色"
+            ]
+        },
+        {
+            "conclusion": "是企鹅",
+            "condition": [
+                "是鸟",
+                "不会飞",
+                "会游泳",
+                "有黑白二色"
+            ]
+        },
+        {
+            "conclusion": "是信天翁",
+            "condition": [
+                "是鸟",
+                "善飞"
+            ]
+        }
+    ]
+}
